@@ -1,9 +1,12 @@
 const admin = require('firebase-admin');
-const serviceAccount = require('./path-to-your-service-account-key.json');
+const firebase = require('firebase')
+import firebase from 'firebase/app'; 
+import 'firebase/auth';
+const serviceAccount = require('./AIzaSyC6YHIwTmzWjvEVDXMkGQuXwGD7UDjNQkI.json');
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
-  databaseURL: 'your-database-url',
+  databaseURL: '/signin/EeUPXKJFjHd8hXFUSpBS',
 });
 
 module.exports = admin;
